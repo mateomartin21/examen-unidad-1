@@ -1,0 +1,33 @@
+Explica dos diferencias entre una API REST y un servidor GraphQL.
+
+Mientras que REST distribuye los recursos en múltiples endpoints específicos (por ejemplo, /laptops y /laptops/2), GraphQL centraliza todas las consultas en un único punto de acceso, típicamente /graphql.
+
+En REST el servidor determina por completo la estructura de la respuesta, mientras que en GraphQL es el cliente quien tiene el control para solicitar de forma precisa únicamente los campos que necesita.
+
+Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL.
+
+REST resulta sumamente práctico para aplicaciones con operaciones estándar y directas, como gestionar las altas, bajas y consultas de los artículos en un inventario.
+
+GraphQL brilla cuando las interfaces de usuario exigen combinar datos relacionales y flexibilidad en los atributos requeridos, como consultar en una sola petición los detalles de un taller junto con su respectivo instructor.
+
+¿Qué diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación?
+
+Una imagen funciona como la plantilla o paquete estático que empaqueta la aplicación, sus dependencias y las configuraciones necesarias.
+
+Un contenedor representa la instancia activa y en ejecución de esa imagen, la cual puede iniciarse, detenerse o eliminarse según se requiera.
+
+El Dockerfile actúa como el guion o receta con los pasos para construir la imagen: seleccionar la imagen base (como Python), copiar los archivos del proyecto, instalar los paquetes y definir el comando de arranque.
+
+¿Para qué sirve Docker Compose? En el mapeo 8000:8000, ¿qué representa el primer 8000 y qué representa el segundo?
+
+Docker Compose facilita la orquestación al permitir definir, interconectar y levantar múltiples servicios relacionados de manera conjunta.
+
+En la expresión de mapeo 8000:8000, el primer número designa el puerto de la máquina anfitriona (tu equipo), y el segundo indica el puerto interno expuesto dentro del contenedor.
+
+¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica la llave primaria id?
+
+Una lista en Python reside temporalmente en la memoria RAM del proceso, por lo que toda la información se pierde en cuanto la aplicación se apaga.
+
+MySQL almacena los datos de forma persistente en disco, asegurando que los registros de las laptops sigan disponibles incluso después de reiniciar la API.
+
+La llave primaria (id) funciona como un identificador unívoco para cada laptop, lo que permite localizar o manipular un registro específico con total precisión sin confusiones.
